@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "e1eec754ee0ab13e2f459a70f2e555ef"
+application_url = "https://alice-chad-belfast-amateur.trycloudflare.com"
+embedded = true
+name = "MeroStore"
+handle = "merostore"
+
+[webhooks]
+api_version = "2024-10"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://alice-chad-belfast-amateur.trycloudflare.com/auth/callback",
+  "https://alice-chad-belfast-amateur.trycloudflare.com/auth/shopify/callback",
+  "https://alice-chad-belfast-amateur.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "raman-tech.myshopify.com"
+automatically_update_urls_on_dev = true
