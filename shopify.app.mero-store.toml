@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "f11069acb2b4c68cc6e796ac7cf2cb7a"
+application_url = "https://nevertheless-mechanical-asbestos-billy.trycloudflare.com"
+embedded = true
+name = "mero-shop"
+handle = "mero-shop"
+
+[webhooks]
+api_version = "2024-10"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,read_products, read_orders, read_customers"
+
+[auth]
+redirect_urls = [
+  "https://nevertheless-mechanical-asbestos-billy.trycloudflare.com/auth/callback",
+  "https://nevertheless-mechanical-asbestos-billy.trycloudflare.com/auth/shopify/callback",
+  "https://nevertheless-mechanical-asbestos-billy.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "raman-tech.myshopify.com"
+automatically_update_urls_on_dev = true
+include_config_on_deploy = true

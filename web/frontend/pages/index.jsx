@@ -8,13 +8,17 @@ Page,
 } from "@shopify/polaris";
 
 import { useTranslation, Trans } from "react-i18next";
-import { Card, OrderDetails, OrderGraphs } from "../components";
-export { Product } from "./Product";
+import { Card, OrderDetails, OrderGraphs, TopBar } from "../components";
+
+
 export default function HomePage() {
   const { t } = useTranslation();
   return (
+    
     <Page narrowWidth>
+       
       <div className="home-section">
+     
         <div className="graphs-section">
           <OrderGraphs/>
      

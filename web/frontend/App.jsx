@@ -4,7 +4,7 @@ import { NavMenu } from "@shopify/app-bridge-react";
 import Routes from "./Routes";
 
 import { QueryProvider, PolarisProvider, NavigationBar, TopBar } from "./components";
-import { Product } from "./pages";
+
 export default function App() {
   // Any .tsx or .jsx files in /pages will become a route
   // See documentation for <Routes /> for more info
